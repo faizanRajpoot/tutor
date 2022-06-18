@@ -1,0 +1,212 @@
+.trainers{
+    // height: 100vh;
+    background-color: white;
+    &_heading{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 70px;
+        h1{
+            // color: white;
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            font-weight: 500;
+        }
+        .line{
+            border: 1px solid black;
+            width: 220px;
+            // margin-left: 20px ;
+        }
+    }
+    .para{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        p{
+            word-spacing: 2px;
+            line-height: 25px;
+            width: 83%;
+            text-align: center;
+        }
+    }
+    .pictures{
+        display: flex;
+        // flex-wrap: wrap;
+        margin-top: 50px;
+        // .overlay{
+        //     width: 100%;
+        //     height:400px;
+        //     opacity: 0;
+        //     transition: all .5s ease-in;
+        //     z-index: 100;
+        //     background-color: aqua;
+        //     position: absolute;
+        // }
+        img{
+            position: relative;
+            width: 100%;
+            height: 200px;
+            transition: .3s linear;
+        }
+        // img:hover{
+        //     transform: scaleY(1.1);
+        // }
+        // .overlay:hover{
+        //     opacity: 0.4;
+        // }
+    }
+    .pictures-2{
+        display: flex;
+        img{
+            position: relative;
+            width: 100%;
+            height: 200px;
+            transition: .3s linear;
+        }
+    }
+}
+
+
+@media (max-width:900px){
+    .trainers{
+     
+        &_heading{
+            line-height: 70px;
+            h1{
+                font-size: 2.2rem;
+                letter-spacing: 2px;
+                font-weight: 400;
+            }
+        }
+        .para{
+            p{
+                word-spacing: 2px;
+                line-height: 22px;
+            }
+        }
+        .pictures{
+            img{
+                height: 170px;               
+            }
+        }
+        .pictures-2{
+            img{
+                height: 170px;               
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:765px){
+    .trainers{
+     
+        &_heading{
+            line-height: 70px;
+            h1{
+                font-size: 1.8rem;
+                letter-spacing: 2px;
+                font-weight: 400;
+            }
+        }
+        .para{
+            p{
+                word-spacing: 2px;
+                line-height: 22px;
+                width: 83%;
+                font-size: 0.9rem;
+            }
+        }
+        .pictures{
+            img{
+                height: 120px;               
+            }
+        }
+        .pictures-2{
+            img{
+                height: 120px;               
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:500px){
+    .trainers{
+     
+        &_heading{
+            line-height: 70px;
+            h1{
+                font-size: 1.4rem;
+                letter-spacing: 0px;
+                word-spacing: 4px;
+                font-weight: 500;
+            }
+            .line{
+                border: 1px solid black;
+                width: 180px;
+            }
+        }
+        .para{
+            p{
+                word-spacing: 1px;
+                line-height: 20px;
+                width: 83%;
+                font-size: 0.8rem;
+            }
+        }
+        .pictures{
+            img{
+                height: 100px;               
+            }
+        }
+        .pictures-2{
+            img{
+                height: 100px;               
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:365px){
+    .trainers{
+     
+        &_heading{
+            line-height: 40px;
+            h1{
+                font-size: 1rem;
+                letter-spacing: 0px;
+                word-spacing: 2px;
+                font-weight: 500;
+            }
+            .line{
+                border: 1px solid black;
+                width: 120px;
+            }
+        }
+        .para{
+            p{
+                word-spacing: 0px;
+                line-height: 18px;
+                width: 83%;
+                font-size: 0.7rem;
+            }
+        }
+        .pictures{
+            img{
+                height: 70px;               
+            }
+        }
+        .pictures-2{
+            img{
+                height: 70px;               
+            }
+        }
+    }
+}
+

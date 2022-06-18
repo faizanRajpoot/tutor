@@ -1,0 +1,150 @@
+.reach{
+    // height: 100vh;
+    &_photo{
+        img{
+            width: 100%;
+            // height: 100px;
+        }
+    }
+    &_content{
+        // height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 5rem 4.5rem;
+        .location{
+            width: 360px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            // margin: 30px;
+            &:first-child{
+                margin: 40px 0;
+            }
+            .circle{
+                width: 60px;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                border: 2px solid #0087CB;
+                margin-bottom: 5px;
+                .icon{
+                    color: #0087CB;
+                    font-size: 25px;
+                }
+            }
+            h1{
+                margin: 15px 0;
+                font-weight: 900;
+            }
+            p{
+                line-height: 24px;
+            }
+
+        }
+    
+    }
+}
+
+
+
+@media (max-width:790px){
+    .reach{
+        &_content{
+            padding: 0 4.5rem;          
+            .location{
+
+                .circle{
+                    width: 60px;
+                    height: 60px;
+                    margin-bottom: 5px;
+                    .icon{
+                        color: #0087CB;
+                        font-size: 25px;
+                    }
+                }
+                h1{
+                    font-size: 1.1rem;
+                    margin: 15px 0;
+                    font-weight: 500;
+                }
+                p{
+                    line-height: 20px;
+                    font-size: 0.7rem;
+                }
+    
+            }
+        
+        }
+    }
+}
+
+
+
+@media (max-width:400px){
+    .reach{
+        &_content{
+            padding: 0 4.5rem;          
+            .location{
+
+                .circle{
+                    width: 60px;
+                    height: 60px;
+                    margin-bottom: 5px;
+                    .icon{
+                        color: #0087CB;
+                        font-size: 25px;
+                    }
+                }
+                h1{
+                    font-size: 1.1rem;
+                    margin: 15px 0;
+                    font-weight: 500;
+                }
+                p{
+                    line-height: 20px;
+                    font-size: 0.7rem;
+                }
+    
+            }
+        
+        }
+    }
+}
+
+
+@media (max-width:375px){
+    .reach{
+        &_content{
+            padding: 0 4.5rem;          
+            .location{
+                .circle{
+                    width: 40px;
+                    height: 40px;
+                    margin-bottom: 2.5px;
+                    border: 0.8px solid #0087CB;
+                    .icon{
+                        color: #0087CB;
+                        font-size: 20px;
+                    }
+                }
+                h1{
+                    font-size: 1.1rem;
+                    margin: 15px 0;
+                    font-weight: 500;
+                }
+                p{
+                    line-height: 20px;
+                    font-size: 0.7rem;
+                }
+    
+            }
+        
+        }
+    }
+}

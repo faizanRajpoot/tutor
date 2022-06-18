@@ -1,0 +1,159 @@
+#header{
+    background-image:linear-gradient(rgba(56, 55, 55, 0), rgba(0, 0, 0, 0.075)), url(./assets/background.jpg);
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 6rem;
+    .form_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        // height: 420px;
+        padding: 30px 0;
+        opacity: 0;
+        width: 390px;
+        border-radius: 10px;
+        transition: transform .5s;
+        transform: translateX(-400px);
+
+        &_content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            h2{
+                font-size: 2rem;
+                color: #0087cb;
+                text-align: center;
+                letter-spacing: 1.5px;
+                font-weight: 700;
+                word-spacing: 1px;
+            }
+            input{
+                width: 100%;
+                margin-top: 18px;
+                border: 1px solid black;
+                border-radius: 5px;
+                height: 42px;
+                padding: 0 15px;
+                font-size: .9rem;
+            }
+            .mess{
+                height: 42px;
+                margin-top: 18px;
+                border: 1px solid black;
+                border-radius: 5px;
+                font-size: .9rem;
+                width: 100%;
+                padding: 10px 15px;
+            }
+            a{
+                margin-top: 18px;
+                color: white;
+                background-color: #0087cbe7;
+                padding: .8rem 1.5rem;
+                font-size: 1rem;
+                font-weight: 600;
+                border-radius: 5px;
+            }
+        }
+    }
+    a{
+        font-size: 1rem;
+        color: white;
+        background-color: #0087cbce;
+        padding: .8rem 1.5rem;
+        border-radius: 5px;
+    }
+}
+
+.opac{
+    opacity: 1 !important;
+    animation: move .5s;
+    transform: translateX(0px) !important;
+
+}
+
+@keyframes move{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+// ResponsiveNess
+@media (max-width:630px){
+    #header{
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0% !important;
+        overflow: hidden;
+        padding: 0 !important;
+
+        .form_container{
+            width: 370px;
+            &_content{
+                h2{
+                    font-size: 1.3rem;
+                }
+                a{
+                    font-size: .7rem;
+                }
+            }
+        }
+        #btn{
+            font-size: .8rem;
+            margin-top: 480px;
+            margin-left: -140px;
+        }
+    }
+}
+
+@media (max-width:450px){
+    #header{
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0% !important;
+        overflow: hidden;
+        padding: 0 !important;
+
+        .form_container{
+            width: 300px;
+            &_content{
+                h2{
+                    font-size: 1rem;
+                }
+                a{
+                    font-size: .7rem;
+                }
+                input{
+                    width: 260px;
+                    font-size: .7rem;
+                    height: 30px;
+                }
+                .mess{
+                    width: 260px;
+                    font-size: .7rem;
+                    height: 50px;
+                }
+            }
+        }
+        #btn{
+            font-size: .8rem;
+            margin-top: 460px;
+            margin-left: -140px;
+        }
+    }
+}
