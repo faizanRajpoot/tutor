@@ -1,6 +1,9 @@
 #header{
     background-image:linear-gradient(rgba(56, 55, 55, 0), rgba(0, 0, 0, 0.075)), url(./assets/background.jpg);
     height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     display: flex;
     align-items: center;
